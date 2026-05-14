@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REEL — Movie Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+ 
+<header>
+  <div class="logo">REEL<sub>Collection</sub></div>
+  <div class="header-right" id="count"></div>
+</header>
+ 
+<div class="sortbar">
+  <div class="sortbar-label">Sort by</div>
+  <select id="sort-select">
+    <option value="">— Select —</option>
+    <option value="alpha-az">A → Z</option>
+    <option value="alpha-za">Z → A</option>
+    <option value="year-new">Newest First</option>
+    <option value="year-old">Oldest First</option>
+  </select>
+</div>
+ 
+<main class="grid" id="grid"></main>
+ 
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">REEL</div>
+    <div class="footer-tagline">A curated collection of cinema worth remembering.</div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span>© 2025 Reel Collection</span>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Submit a Film</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
