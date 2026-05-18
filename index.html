@@ -15,14 +15,21 @@
 </header>
  
 <div class="sortbar">
-  <div class="sortbar-label">Sort by</div>
-  <select id="sort-select">
-    <option value="">— Select —</option>
-    <option value="alpha-az">A → Z</option>
-    <option value="alpha-za">Z → A</option>
-    <option value="year-new">Newest to Oldest</option>
-    <option value="year-old">Oldest to Newest</option>
-  </select>
+  <div class="search-wrap">
+    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="search-input" placeholder="Search any movie title…"/>
+    <button id="search-clear" aria-label="Clear search">✕</button>
+  </div>
+  <div class="sortbar-right">
+    <div class="sortbar-label">Sort by</div>
+    <select id="sort-select">
+      <option value="">— Select —</option>
+      <option value="alpha-az">A → Z</option>
+      <option value="alpha-za">Z → A</option>
+      <option value="year-new">Newest First</option>
+      <option value="year-old">Oldest First</option>
+    </select>
+  </div>
 </div>
  
 <main class="grid" id="grid"></main>
